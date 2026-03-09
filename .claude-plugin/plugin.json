@@ -1,0 +1,10 @@
+{
+  "name": "claude-toolkit",
+  "description": "Personal productivity toolkit: Figma-to-code with visual verification, session auditing, and workflow automation",
+  "version": "0.1.0",
+  "author": {
+    "name": "Dmitry Bilyuk"
+  },
+  "license": "MIT",
+  "keywords": ["figma", "audit", "productivity", "workflows", "visual-verification"]
+}

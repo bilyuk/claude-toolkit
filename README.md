@@ -2,14 +2,49 @@
 
 Personal Claude Code plugin with custom skills, commands, and hooks.
 
-## Skills
+## Installation
 
-- **figma-match** — Pixel-perfect Figma implementation with automated Playwright verification loop
-
-## Setup
-
-Register as a local plugin in Claude Code:
+### Option 1: Install from local path
 
 ```bash
 /plugin install /Users/bilyuk/project/claude-toolkit
+```
+
+### Option 2: Push to GitHub and install as marketplace
+
+```bash
+# After pushing to GitHub:
+/plugin marketplace add <github-username>/claude-toolkit
+/plugin install claude-toolkit@claude-toolkit
+```
+
+## Skills
+
+| Skill | Description |
+|-------|-------------|
+| **figma-match** | Implement Figma designs with automated Playwright screenshot verification loop (up to 3 rounds) |
+| **audit** | Analyze all Claude Code session history, categorize prompts, and recommend what to build as skills/plugins/agents/CLAUDE.md |
+
+## Commands
+
+| Command | Description |
+|---------|-------------|
+| `/figma-match` | Invoke figma-match skill with a Figma URL |
+| `/audit` | Run full session history analysis |
+
+## Structure
+
+```
+claude-toolkit/
+├── .claude-plugin/
+│   ├── plugin.json          # Plugin metadata
+│   └── marketplace.json     # Marketplace catalog
+├── skills/
+│   ├── figma-match/SKILL.md
+│   └── audit/SKILL.md
+├── commands/
+│   ├── figma-match.md
+│   └── audit.md
+├── hooks/
+└── README.md
 ```
