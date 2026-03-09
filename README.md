@@ -29,8 +29,9 @@ Personal Claude Code plugin with custom skills, commands, and hooks.
 
 | Command | Description |
 |---------|-------------|
-| `/figma-match` | Invoke figma-match skill with a Figma URL |
-| `/audit` | Run full session history analysis |
+| `/figma-match` | Implement a Figma design with automated Playwright screenshot verification |
+| `/audit` | Analyze all Claude Code session history and recommend automations |
+| `/catchup` | Review current branch changes efficiently using diffs (context-optimized) |
 
 ## Structure
 
@@ -44,7 +45,8 @@ claude-toolkit/
 │   └── audit/SKILL.md
 ├── commands/
 │   ├── figma-match.md
-│   └── audit.md
+│   ├── audit.md
+│   └── catchup.md
 ├── hooks/
 └── README.md
 ```
