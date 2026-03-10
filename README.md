@@ -4,18 +4,9 @@ Personal Claude Code plugin with custom skills, commands, and hooks.
 
 ## Installation
 
-### Option 1: Install from local path
-
 ```bash
-/plugin install /Users/bilyuk/project/claude-toolkit
-```
-
-### Option 2: Push to GitHub and install as marketplace
-
-```bash
-# After pushing to GitHub:
-/plugin marketplace add <github-username>/claude-toolkit
-/plugin install claude-toolkit@claude-toolkit
+claude plugin marketplace add --scope user /home/dmitrybilyuk/claude-toolkit
+claude plugin install claude-toolkit@claude-toolkit
 ```
 
 ## Skills
