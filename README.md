@@ -23,6 +23,7 @@ claude plugin install claude-toolkit@claude-toolkit
 | `/figma-match` | Implement a Figma design with automated Playwright screenshot verification |
 | `/audit` | Analyze all Claude Code session history and recommend automations |
 | `/catchup` | Review current branch changes efficiently using diffs (context-optimized) |
+| `/pr-guardian` | Automated PR completion monitor — polls checks and addresses bot review comments |
 
 ## Structure
 
